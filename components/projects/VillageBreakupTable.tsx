@@ -22,7 +22,7 @@ export const VillageBreakupTable = () => {
         grouped[v] = {
           village: v,
           totalArea: 0,
-          circleRate: p.circleRatePerHa, // Will keep the first one found, or we could average
+          circleRate: (p as any).base_circle_rate, // Will keep the first one found, or we could average
           landowners: new Set(),
           disputes: 0,
           khasras: []
@@ -32,12 +32,12 @@ export const VillageBreakupTable = () => {
       const area = Number(p.areaHectares);
       if (!isNaN(area)) grouped[v].totalArea += area;
       
-      if (p.circleRatePerHa && !grouped[v].circleRate) {
-        grouped[v].circleRate = p.circleRatePerHa;
+      if ((p as any).base_circle_rate && !grouped[v].circleRate) {
+        grouped[v].circleRate = (p as any).base_circle_rate;
       }
 
       if (p.ownerName) grouped[v].landowners.add(p.ownerName);
-      if (p.courtStay || p.disputeReason || p.status?.toLowerCase().includes('dispute')) {
+      if ((p as any).courtStay || (p as any).disputeReason || p.possessionStatus?.toLowerCase().includes('dispute')) {
         grouped[v].disputes += 1;
       }
       if (p.khasraNo) grouped[v].khasras.push(p.khasraNo);

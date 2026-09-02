@@ -183,7 +183,7 @@ export const ProposalSubmissionModal = ({ isOpen, onClose, onProjectCreated }) =
                 step="0.1"
                 required
                 value={totalLengthKm}
-                onChange={(e) => setTotalLengthKm(e.target.value)}
+                onChange={(e) => setTotalLengthKm(Number(e.target.value))}
                 className="w-full bg-slate-50 text-slate-900 text-xs border border-slate-300 rounded px-2.5 py-1.5 outline-none focus:ring-1 focus:ring-[#002b49]"
               />
             </div>
@@ -197,7 +197,7 @@ export const ProposalSubmissionModal = ({ isOpen, onClose, onProjectCreated }) =
                 step="0.5"
                 required
                 value={totalLandRequiredHa}
-                onChange={(e) => setTotalLandRequiredHa(e.target.value)}
+                onChange={(e) => setTotalLandRequiredHa(Number(e.target.value))}
                 className="w-full bg-slate-50 text-slate-900 text-xs border border-slate-300 rounded px-2.5 py-1.5 outline-none focus:ring-1 focus:ring-[#002b49]"
               />
             </div>
@@ -211,7 +211,7 @@ export const ProposalSubmissionModal = ({ isOpen, onClose, onProjectCreated }) =
                 step="10"
                 required
                 value={estimatedBudgetCr}
-                onChange={(e) => setEstimatedBudgetCr(e.target.value)}
+                onChange={(e) => setEstimatedBudgetCr(Number(e.target.value))}
                 className="w-full bg-slate-50 text-slate-900 text-xs border border-slate-300 rounded px-2.5 py-1.5 outline-none focus:ring-1 focus:ring-[#002b49]"
               />
             </div>

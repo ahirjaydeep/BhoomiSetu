@@ -1,7 +1,9 @@
 import { NextResponse } from 'next/server';
 import { withAuth, AuthenticatedRequest } from '@/lib/middleware/withAuth';
 import { adminDb } from '@/lib/firebase/admin';
-import type { Project, CadastralParcel, GeoJSONPolygon } from '@/types/schema';
+import type { Project, CadastralParcel } from '@/types/schema';
+
+import type { Feature, Polygon } from 'geojson';
 
 async function seedHandler(req: AuthenticatedRequest) {
   try {
@@ -15,6 +17,9 @@ async function seedHandler(req: AuthenticatedRequest) {
       lrb_name: 'National Highways Authority of India (NHAI)',
       total_budget: 350000000000, // ₹35,000 Crores
       current_stage: 3,
+      sec11Date: null,
+      sec19Date: null,
+      workflowHistory: []
     };
     batch.set(proj1Ref, proj1Data);
 
@@ -25,6 +30,9 @@ async function seedHandler(req: AuthenticatedRequest) {
       lrb_name: 'Rewa Ultra Mega Solar Limited',
       total_budget: 45000000000, // ₹4,500 Crores
       current_stage: 6,
+      sec11Date: null,
+      sec19Date: null,
+      workflowHistory: []
     };
     batch.set(proj2Ref, proj2Data);
 
@@ -44,7 +52,7 @@ async function seedHandler(req: AuthenticatedRequest) {
       
       // Generating realistic-looking Polygon coordinates in Punjab (approx Lat: 31.0, Lng: 75.0)
       const offset = i * 0.001;
-      const mockPolygon: GeoJSONPolygon = {
+      const mockPolygon: Polygon = {
         type: 'Polygon',
         coordinates: [
           [
@@ -56,13 +64,19 @@ async function seedHandler(req: AuthenticatedRequest) {
           ]
         ]
       };
+      
+      const mockFeature: Feature<Polygon> = {
+        type: 'Feature',
+        properties: {},
+        geometry: mockPolygon
+      };
 
       const parcelData: CadastralParcel = {
         khasra_no: `402/${i + 1}`,
         state: 'Punjab',
         district: 'Ludhiana',
         village: 'Khanna',
-        coordinates: mockPolygon,
+        coordinates: mockFeature,
         owner_name: `Farmer ${String.fromCharCode(65 + i)}`,
         base_circle_rate: 2500000 + (i * 100000), // ~25-29 Lakhs per hectare
         acquisition_status: mockStatuses[i],

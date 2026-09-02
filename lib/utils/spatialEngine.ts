@@ -1,4 +1,4 @@
-import { buffer, booleanIntersects, area } from '@turf/turf';
+import { buffer, intersect, area } from '@turf/turf';
 import { Feature, LineString, Polygon } from 'geojson';
 import { CadastralParcel } from '@/types/schema';
 import { IntersectionResult } from '@/types/gis';
@@ -25,9 +25,9 @@ export function findIntersectingParcels(rowPolygon: Feature<Polygon>, allParcels
   let totalAffectedAreaMeters = 0;
 
   for (const parcel of allParcels) {
-    if (booleanIntersects(rowPolygon, parcel.coordinates)) {
+    if (parcel.coordinates && intersect(rowPolygon, parcel.coordinates as any) !== null) {
       affectedParcels.push(parcel);
-      totalAffectedAreaMeters += area(parcel.coordinates);
+      totalAffectedAreaMeters += area(parcel.coordinates as any);
     }
   }
 

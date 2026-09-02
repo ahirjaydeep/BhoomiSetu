@@ -5,7 +5,7 @@ export const stageToParcelStatus = (stage: number): string | null => {
   switch (stage) {
     case RfctlarrStage.STAGE_1_PROPOSAL:
       return 'PROPOSED';
-    case RfctlarrStage.STAGE_2_SIA_APPROVAL:
+    case RfctlarrStage.STAGE_2_SIA:
       return 'SIA_IN_PROGRESS';
     case RfctlarrStage.STAGE_3_SEC11_GAZETTE:
       return 'SEC11_NOTIFIED';

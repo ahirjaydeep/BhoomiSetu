@@ -49,7 +49,7 @@ export default function ProjectsMasterPage() {
         (p.name && p.name.toLowerCase().includes(s)) || 
         (p.id && p.id.toLowerCase().includes(s)) ||
         (p.state && p.state.toLowerCase().includes(s)) ||
-        (p.districts && p.districts.join(' ').toLowerCase().includes(s));
+        (p.district && p.district.toLowerCase().includes(s));
       if (!matchesSearch) return false;
     }
 

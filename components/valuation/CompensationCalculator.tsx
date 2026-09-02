@@ -107,7 +107,7 @@ export const CompensationCalculator = () => {
                   type="number"
                   step="0.05"
                   value={areaHectares}
-                  onChange={(e) => setAreaHectares(e.target.value)}
+                  onChange={(e) => setAreaHectares(Number(e.target.value))}
                   className="w-full bg-slate-50 text-slate-900 text-xs border border-slate-300 rounded px-2.5 py-2 outline-none focus:ring-1 focus:ring-[#002b49]"
                 />
                 <span className="absolute right-2.5 top-2 text-[11px] text-slate-500">
@@ -124,7 +124,7 @@ export const CompensationCalculator = () => {
                 type="number"
                 step="100000"
                 value={circleRatePerHa}
-                onChange={(e) => setCircleRatePerHa(e.target.value)}
+                onChange={(e) => setCircleRatePerHa(Number(e.target.value))}
                 className="w-full bg-slate-50 text-slate-900 text-xs border border-slate-300 rounded px-2.5 py-2 outline-none focus:ring-1 focus:ring-[#002b49]"
               />
             </div>
@@ -168,7 +168,7 @@ export const CompensationCalculator = () => {
                   max="2.0"
                   step="0.05"
                   value={ruralMultiplier}
-                  onChange={(e) => setRuralMultiplier(e.target.value)}
+                  onChange={(e) => setRuralMultiplier(Number(e.target.value))}
                   className="w-full accent-[#002b49] cursor-pointer"
                 />
                 <div className="flex justify-between text-[10px] text-slate-500">
@@ -189,7 +189,7 @@ export const CompensationCalculator = () => {
                 type="number"
                 step="50000"
                 value={structureValuation}
-                onChange={(e) => setStructureValuation(e.target.value)}
+                onChange={(e) => setStructureValuation(Number(e.target.value))}
                 placeholder="Houses, Wells, Borewells"
                 className="w-full bg-slate-50 text-slate-900 text-xs border border-slate-300 rounded px-2.5 py-2 outline-none focus:ring-1 focus:ring-[#002b49]"
               />
@@ -203,7 +203,7 @@ export const CompensationCalculator = () => {
                 type="number"
                 step="25000"
                 value={treeCropValuation}
-                onChange={(e) => setTreeCropValuation(e.target.value)}
+                onChange={(e) => setTreeCropValuation(Number(e.target.value))}
                 placeholder="Fruit Trees, Standing Crops"
                 className="w-full bg-slate-50 text-slate-900 text-xs border border-slate-300 rounded px-2.5 py-2 outline-none focus:ring-1 focus:ring-[#002b49]"
               />
@@ -221,7 +221,7 @@ export const CompensationCalculator = () => {
                 min="0"
                 max="36"
                 value={monthsSinceSec11}
-                onChange={(e) => setMonthsSinceSec11(e.target.value)}
+                onChange={(e) => setMonthsSinceSec11(Number(e.target.value))}
                 className="w-full bg-slate-50 text-slate-900 text-xs border border-slate-300 rounded px-2.5 py-2 outline-none focus:ring-1 focus:ring-[#002b49]"
               />
             </div>
@@ -235,7 +235,7 @@ export const CompensationCalculator = () => {
                 min="0"
                 max="50"
                 value={displacedFamilyCount}
-                onChange={(e) => setDisplacedFamilyCount(e.target.value)}
+                onChange={(e) => setDisplacedFamilyCount(Number(e.target.value))}
                 className="w-full bg-slate-50 text-slate-900 text-xs border border-slate-300 rounded px-2.5 py-2 outline-none focus:ring-1 focus:ring-[#002b49]"
               />
             </div>

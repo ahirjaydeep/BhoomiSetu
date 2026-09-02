@@ -102,7 +102,7 @@ export const MarketValueCalculator = ({ areaHectares, onCalculated }: MarketValu
                 <option value={1.0}>1.0x (Urban / Near Limit)</option>
                 <option value={1.2}>1.2x (10-20 km)</option>
                 <option value={1.5}>1.5x (20-30 km)</option>
-                <option value={2.0}>2.0x (>30 km Remote)</option>
+                <option value={2.0}>2.0x (&gt;30 km Remote)</option>
               </select>
             </div>
           </div>

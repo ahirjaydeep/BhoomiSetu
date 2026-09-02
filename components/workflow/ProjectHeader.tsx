@@ -14,19 +14,7 @@ import {
 } from 'lucide-react';
 import Link from 'next/link';
 import { useRealtimeObjections } from '@/hooks/useRealtimeObjections';
-
-interface Project {
-  id: string;
-  name: string;
-  sector: string;
-  ministry: string;
-  district: string;
-  state: string;
-  totalAreaHa: number;
-  khasraCount: number;
-  estimatedBudget: number;
-  currentStage: number;
-}
+import { Project } from '@/lib/types/schema';
 
 interface ProjectHeaderProps {
   project: Project;
@@ -135,7 +123,7 @@ export const ProjectHeader = ({ project }: ProjectHeaderProps) => {
               </div>
               <div className="flex items-center gap-1.5">
                 <IndianRupee className="w-4 h-4 text-status-green" />
-                <span>₹{(project.estimatedBudget / 10000000).toFixed(2)} Cr Escrow</span>
+                <span>₹{((project.estimatedBudget || 0) / 10000000).toFixed(2)} Cr Escrow</span>
               </div>
             </div>
 

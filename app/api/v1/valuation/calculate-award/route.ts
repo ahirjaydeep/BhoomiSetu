@@ -47,7 +47,7 @@ async function calculateAwardHandler(req: AuthenticatedRequest) {
     // Safely parse sec11Date from Firestore Timestamp or string
     let sec11Date: Date;
     if (projectData.sec11Date) {
-      sec11Date = projectData.sec11Date.toDate ? projectData.sec11Date.toDate() : new Date(projectData.sec11Date);
+      sec11Date = (projectData.sec11Date as any).toDate ? (projectData.sec11Date as any).toDate() : new Date(projectData.sec11Date as any);
     } else {
       // Fallback: If dummy data has no date, assume 1 year prior to today to demonstrate interest calc
       sec11Date = new Date();

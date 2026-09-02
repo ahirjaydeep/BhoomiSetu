@@ -6,6 +6,16 @@ export interface Project {
   currentStage: number; // 1 to 7 (1: Sec 4, 2: Sec 11, 3: Sec 15, 4: Sec 19, 5: Sec 23, 6: Sec 30, 7: Sec 38)
   activeCorridorsCount: number;
   totalDisbursedCrores: number;
+  sec11Date?: any;
+  sec19Date?: any;
+  projectType?: string;
+  risk?: boolean;
+  sector?: string;
+  district?: string;
+  state?: string;
+  totalAreaHa?: number;
+  khasraCount?: number;
+  estimatedBudget?: number;
   updatedAt: string;
 }
 
@@ -20,10 +30,14 @@ export interface CadastralParcel {
   state: string;
   areaHectares: number;
   multiplier: number;
-  possessionStatus: "Pending" | "Possession Handed Over" | "Disputed";
+  possessionStatus: "Pending" | "Possession Handed Over" | "Disputed" | "Award Determined" | string;
   totalCompensationLakhs: number;
   dbtStatus: "PENDING" | "PROCESSING" | "SUCCESSFUL" | "FAILED";
   pftsRefNo: string;
+  dbtReference?: string;
+  compensationBaseValue?: number;
+  compensationSolatium?: number;
+  compensationTotalAward?: number;
   geoCoordinates: string;
 }
 

@@ -3,7 +3,7 @@ import React, { createContext, useContext, useState, useEffect } from 'react';
 import { app, auth, db } from '@/lib/firebase/client';
 import { api } from '@/lib/services/api';
 
-const AuthContext = createContext();
+const AuthContext = createContext<any>(null);
 
 export const AuthProvider = ({ children }) => {
   const [users, setUsers] = useState([]);

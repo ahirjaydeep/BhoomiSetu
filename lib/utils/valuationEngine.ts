@@ -124,3 +124,53 @@ export function calculateSecondSchedule(
     totalRnR,
   };
 }
+
+/**
+ * Calculates the complete First Schedule Award (Market Value + Multiplier + Solatium + Interest)
+ */
+export function calculateFirstSchedule(
+  area: number,
+  circleRate: number,
+  avgSaleDeed: number,
+  isUrban: boolean,
+  distanceToUrban: number,
+  attachedAssetsValue: number,
+  sec11Date: Date,
+  awardDate: Date
+): FirstScheduleAward {
+  const safeArea = safeNumber(area);
+  const baseRate = Math.max(safeNumber(circleRate), safeNumber(avgSaleDeed));
+  const baseMarketValue = baseRate * safeArea;
+  
+  let multiplierFactor = 1.0;
+  if (!isUrban) {
+    if (distanceToUrban > 30) multiplierFactor = 2.0;
+    else if (distanceToUrban > 20) multiplierFactor = 1.5;
+    else if (distanceToUrban > 10) multiplierFactor = 1.2;
+    else multiplierFactor = 1.0;
+  }
+  
+  const multipliedValue = baseMarketValue * multiplierFactor;
+  const safeAssets = safeNumber(attachedAssetsValue);
+  const totalMarketValue = multipliedValue + safeAssets;
+  
+  const mandatorySolatium = totalMarketValue; // 100% of market value
+  
+  const msPerDay = 1000 * 60 * 60 * 24;
+  const daysElapsed = Math.max(0, Math.floor((awardDate.getTime() - sec11Date.getTime()) / msPerDay));
+  const yearsElapsed = daysElapsed / 365;
+  const additionalInterest = totalMarketValue * 0.12 * yearsElapsed;
+  
+  const finalFirstScheduleTotal = totalMarketValue + mandatorySolatium + additionalInterest;
+  
+  return {
+    baseMarketValue,
+    multiplierFactor,
+    multipliedValue,
+    attachedAssetsValue: safeAssets,
+    totalMarketValue,
+    mandatorySolatium,
+    additionalInterest,
+    finalFirstScheduleTotal
+  };
+}

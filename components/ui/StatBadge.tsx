@@ -1,6 +1,6 @@
 import React from 'react';
 
-type Variant = 'success' | 'warning' | 'danger' | 'info' | 'neutral' | 'error';
+type Variant = 'success' | 'warning' | 'danger' | 'info' | 'neutral' | 'error' | 'primary';
 
 interface StatBadgeProps {
   variant: Variant;
@@ -16,6 +16,7 @@ const variantStyles: Record<Variant, string> = {
   danger: 'bg-rose-500/10 text-rose-700 dark:text-rose-400 border-rose-500/20',
   error: 'bg-rose-500/10 text-rose-700 dark:text-rose-400 border-rose-500/20',
   info: 'bg-indigo-500/10 text-indigo-700 dark:text-indigo-400 border-indigo-500/20',
+  primary: 'bg-blue-500/10 text-blue-700 dark:text-blue-400 border-blue-500/20',
   neutral: 'bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 border-slate-200 dark:border-slate-700'
 };
 
@@ -25,6 +26,7 @@ const pulseColors: Record<Variant, string> = {
   danger: 'bg-rose-500',
   error: 'bg-rose-500',
   info: 'bg-indigo-500',
+  primary: 'bg-blue-500',
   neutral: 'bg-slate-500'
 };
 
