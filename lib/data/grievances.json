@@ -1,0 +1,41 @@
+[
+  {
+    "id": "GRV-2026-081",
+    "projectId": "PRJ-2026-NHAI-001",
+    "parcelId": "PARCEL-JAL-003",
+    "khasraNo": "145/1",
+    "complainantName": "Shri Ramesh Kumar Mehra",
+    "contact": "+91 94172-88712",
+    "category": "Classification Dispute (Highway Commercial vs Agricultural)",
+    "description": "Landowner has a commercial petrol pump NOC and road frontage. Requesting commercial circle rate instead of rural agricultural rate.",
+    "status": "Hearing Scheduled (DC Court)",
+    "filedDate": "2025-01-14",
+    "assignedTo": "Dr. Harpreet Kaur, PCS (Collector)",
+    "priority": "HIGH",
+    "resolutionNotes": "Field spot verification conducted by Tehsildar Jalandhar-I on 2025-02-10.",
+    "history": [
+      { "date": "2025-01-14", "action": "Objection filed under Section 15(1)", "by": "Citizen" },
+      { "date": "2025-02-10", "action": "Spot inspection completed by Kanoongo", "by": "Revenue Dept" },
+      { "date": "2025-03-01", "action": "Hearing fixed before District Collector", "by": "SLAO Office" }
+    ]
+  },
+  {
+    "id": "GRV-2026-112",
+    "projectId": "PRJ-2026-REWA-003",
+    "parcelId": "PARCEL-REW-201",
+    "khasraNo": "88/1",
+    "complainantName": "Gram Sabha Badwar (Sarpanch)",
+    "contact": "+91 94250-11229",
+    "category": "Community Pasture (Gauchar) Acquisition",
+    "description": "Villagers claim this parcel is the only active cattle grazing land for 450 households.",
+    "status": "Inquiry in Progress",
+    "filedDate": "2025-10-04",
+    "assignedTo": "SDM & SLAO Gurh",
+    "priority": "CRITICAL",
+    "resolutionNotes": "Alternate government wasteland parcel (Khasra 102/4) identified for pasture exchange.",
+    "history": [
+      { "date": "2025-10-04", "action": "Gram Sabha resolution submitted", "by": "Village Panchayat" },
+      { "date": "2025-11-20", "action": "Alternate land proposal formulated", "by": "SDM Office" }
+    ]
+  }
+]

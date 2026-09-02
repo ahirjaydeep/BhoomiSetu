@@ -1,0 +1,40 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+    
+    // Function to check roles (supporting both role as a string claim or boolean claim)
+    function hasRole(roleName) {
+      return request.auth != null && (
+        request.auth.token.role == roleName || 
+        request.auth.token[roleName] == true
+      );
+    }
+
+    // Projects Collection
+    match /projects/{projectId} {
+      // Allow read access to projects for anyone authenticated
+      allow read: if request.auth != null;
+      
+      // Restrict write access to projects to only users with central_admin or requiring_body custom claim
+      allow write: if hasRole('central_admin') || hasRole('requiring_body');
+    }
+
+    // CadastralParcel Collection
+    match /CadastralParcel/{parcelId} {
+      allow read: if request.auth != null;
+      
+      // Restrict updates to CadastralParcel statuses to the slao_district role
+      // This ensures that if the acquisition_status field is being changed, the user must have the slao_district role.
+      allow update: if !('acquisition_status' in request.resource.data.diff(resource.data).affectedKeys()) 
+                    || hasRole('slao_district');
+                    
+      // Assuming other writes might be restricted or allowed elsewhere, keeping it minimal as requested.
+    }
+    
+    // Default deny for other collections
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}

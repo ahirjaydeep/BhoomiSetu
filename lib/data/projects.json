@@ -1,0 +1,439 @@
+[
+  {
+    "id": "PRJ-2026-NHAI-001",
+    "name": "Delhi-Amritsar-Katra Expressway (Package 4 - Jalandhar Section)",
+    "category": "Highways & Transport",
+    "requiringBody": "National Highways Authority of India (NHAI)",
+    "ministry": "Ministry of Road Transport and Highways (MoRTH)",
+    "state": "Punjab",
+    "districts": [
+      "Jalandhar",
+      "Kapurthala"
+    ],
+    "totalLengthKm": 84.5,
+    "totalLandRequiredHa": 420.75,
+    "landAcquiredHa": 328.40,
+    "possessionHandedOverHa": 285.10,
+    "estimatedBudgetCr": 1420.50,
+    "compensationDisbursedCr": 984.20,
+    "totalParcels": 384,
+    "acquiredParcels": 298,
+    "disputedParcels": 14,
+    "stage": "STAGE_6_AWARD_DETERMINATION",
+    "stageName": "Sec 23/26 Award & Disbursement",
+    "status": "In Progress",
+    "priority": "Critical / PM GatiShakti",
+    "startDate": "2024-03-15",
+    "targetPossessionDate": "2026-11-30",
+    "nodalOfficer": {
+      "name": "Er. Vikramjit Singh",
+      "designation": "Project Director, NHAI PIU Jalandhar",
+      "contact": "+91 98140-55421",
+      "email": "pd.jalandhar@nhai.gov.in"
+    },
+    "slaoOfficer": {
+      "name": "Dr. Harpreet Kaur, PCS",
+      "designation": "Special Land Acquisition Officer (SLAO), Jalandhar",
+      "contact": "+91 98765-43210",
+      "email": "slao.jalandhar@punjab.gov.in"
+    },
+    "alignmentCoordinates": [
+      [
+        31.3260,
+        75.5762
+      ],
+      [
+        31.3521,
+        75.5934
+      ],
+      [
+        31.3854,
+        75.6210
+      ],
+      [
+        31.4210,
+        75.6480
+      ],
+      [
+        31.4650,
+        75.6820
+      ]
+    ],
+    "milestones": [
+      {
+        "stage": "STAGE_1_PROPOSAL",
+        "title": "Administrative Proposal & In-Principle Approval",
+        "status": "COMPLETED",
+        "date": "2024-03-15",
+        "remarks": "Approved by MoRTH & DoLR"
+      },
+      {
+        "stage": "STAGE_2_SIA",
+        "title": "Sec 4: Social Impact Assessment (SIA) & Expert Review",
+        "status": "COMPLETED",
+        "date": "2024-07-22",
+        "remarks": "Approved with minimal displacement mitigation"
+      },
+      {
+        "stage": "STAGE_3_SEC11",
+        "title": "Sec 11: Preliminary Notification (Gazette Publication)",
+        "status": "COMPLETED",
+        "date": "2024-11-10",
+        "remarks": "Published in Gazette No. PB-2024-1188"
+      },
+      {
+        "stage": "STAGE_4_SEC15",
+        "title": "Sec 15: Hearing of Objections & DC Report",
+        "status": "COMPLETED",
+        "date": "2025-02-18",
+        "remarks": "38 objections received; 34 resolved, 4 escalated"
+      },
+      {
+        "stage": "STAGE_5_SEC19",
+        "title": "Sec 19: Final Declaration & R&R Scheme Approval",
+        "status": "COMPLETED",
+        "date": "2025-06-04",
+        "remarks": "Final declaration gazetted under RFCTLARR Act"
+      },
+      {
+        "stage": "STAGE_6_AWARD_DETERMINATION",
+        "title": "Sec 23/26: Valuation, Award & Solatium Calculation",
+        "status": "IN_PROGRESS",
+        "date": "2025-10-15",
+        "remarks": "Awards determined for 298/384 parcels; Solatium 100% applied"
+      },
+      {
+        "stage": "STAGE_7_POSSESSION",
+        "title": "Sec 38: Compensation Payout (DBT) & Possession Handover",
+        "status": "PENDING",
+        "date": "2026-11-30",
+        "remarks": "Partial possession granted for 285.10 Ha"
+      }
+    ]
+  },
+  {
+    "id": "PRJ-2026-DFCC-002",
+    "name": "Eastern Dedicated Freight Corridor (Khurja to Sahnewal Link)",
+    "category": "Railways & Logistics",
+    "requiringBody": "Dedicated Freight Corridor Corporation of India (DFCCIL)",
+    "ministry": "Ministry of Railways",
+    "state": "Uttar Pradesh",
+    "districts": [
+      "Bulandshahr",
+      "Aligarh",
+      "Meerut"
+    ],
+    "totalLengthKm": 126.0,
+    "totalLandRequiredHa": 560.20,
+    "landAcquiredHa": 510.80,
+    "possessionHandedOverHa": 490.50,
+    "estimatedBudgetCr": 2180.00,
+    "compensationDisbursedCr": 1820.40,
+    "totalParcels": 492,
+    "acquiredParcels": 448,
+    "disputedParcels": 8,
+    "stage": "STAGE_7_POSSESSION",
+    "stageName": "Sec 38 Final Possession & Handover",
+    "status": "Near Completion",
+    "priority": "High / PM GatiShakti",
+    "startDate": "2023-08-10",
+    "targetPossessionDate": "2026-09-30",
+    "nodalOfficer": {
+      "name": "Shri R. K. Agrawal",
+      "designation": "General Manager (Coordination), DFCCIL",
+      "contact": "+91 94120-11223",
+      "email": "gm.khurja@dfcc.co.in"
+    },
+    "slaoOfficer": {
+      "name": "Smt. Pratibha Sharma, IAS",
+      "designation": "Additional District Magistrate (LA), Bulandshahr",
+      "contact": "+91 94500-99881",
+      "email": "admla.bulandshahr@up.gov.in"
+    },
+    "alignmentCoordinates": [
+      [
+        28.2540,
+        77.8500
+      ],
+      [
+        28.3200,
+        77.9200
+      ],
+      [
+        28.4100,
+        78.0100
+      ],
+      [
+        28.5200,
+        78.1000
+      ]
+    ],
+    "milestones": [
+      {
+        "stage": "STAGE_1_PROPOSAL",
+        "title": "Administrative Proposal & In-Principle Approval",
+        "status": "COMPLETED",
+        "date": "2023-08-10",
+        "remarks": "Approved by Railway Board"
+      },
+      {
+        "stage": "STAGE_2_SIA",
+        "title": "Sec 4: Social Impact Assessment (SIA) & Expert Review",
+        "status": "COMPLETED",
+        "date": "2023-12-05",
+        "remarks": "Approved by State Advisory Body"
+      },
+      {
+        "stage": "STAGE_3_SEC11",
+        "title": "Sec 11: Preliminary Notification (Gazette Publication)",
+        "status": "COMPLETED",
+        "date": "2024-03-20",
+        "remarks": "Published in UP Gazette"
+      },
+      {
+        "stage": "STAGE_4_SEC15",
+        "title": "Sec 15: Hearing of Objections & DC Report",
+        "status": "COMPLETED",
+        "date": "2024-06-15",
+        "remarks": "100% hearings concluded"
+      },
+      {
+        "stage": "STAGE_5_SEC19",
+        "title": "Sec 19: Final Declaration & R&R Scheme Approval",
+        "status": "COMPLETED",
+        "date": "2024-09-12",
+        "remarks": "Gazetted under Sec 19(1)"
+      },
+      {
+        "stage": "STAGE_6_AWARD_DETERMINATION",
+        "title": "Sec 23/26: Valuation, Award & Solatium Calculation",
+        "status": "COMPLETED",
+        "date": "2025-04-10",
+        "remarks": "Awards disbursed for 448 parcels"
+      },
+      {
+        "stage": "STAGE_7_POSSESSION",
+        "title": "Sec 38: Compensation Payout (DBT) & Possession Handover",
+        "status": "IN_PROGRESS",
+        "date": "2026-09-30",
+        "remarks": "Final possession certificates being issued"
+      }
+    ]
+  },
+  {
+    "id": "PRJ-2026-REWA-003",
+    "name": "Rewa Ultra Mega Solar Park Expansion Phase-II (750 MW)",
+    "category": "Renewable Energy",
+    "requiringBody": "Rewa Ultra Mega Solar Limited (RUMSL)",
+    "ministry": "Ministry of New and Renewable Energy (MNRE)",
+    "state": "Madhya Pradesh",
+    "districts": [
+      "Rewa",
+      "Satna"
+    ],
+    "totalLengthKm": 0,
+    "totalLandRequiredHa": 1250.00,
+    "landAcquiredHa": 410.00,
+    "possessionHandedOverHa": 320.00,
+    "estimatedBudgetCr": 890.00,
+    "compensationDisbursedCr": 265.50,
+    "totalParcels": 612,
+    "acquiredParcels": 210,
+    "disputedParcels": 42,
+    "stage": "STAGE_4_SEC15",
+    "stageName": "Sec 15 Hearing of Objections",
+    "status": "Delayed / Bottleneck Identified",
+    "priority": "Medium",
+    "startDate": "2025-01-10",
+    "targetPossessionDate": "2027-03-31",
+    "nodalOfficer": {
+      "name": "Shri Amitava Sen",
+      "designation": "Chief Engineer, RUMSL",
+      "contact": "+91 97555-12345",
+      "email": "ce.rewa@rumsl.mp.gov.in"
+    },
+    "slaoOfficer": {
+      "name": "Shri Manoj Patel, MPAS",
+      "designation": "SDM & SLAO Gurh, Rewa",
+      "contact": "+91 94251-44332",
+      "email": "sdm.gurh@mp.gov.in"
+    },
+    "alignmentCoordinates": [
+      [
+        24.5200,
+        81.3000
+      ],
+      [
+        24.5350,
+        81.3200
+      ],
+      [
+        24.5500,
+        81.3400
+      ],
+      [
+        24.5300,
+        81.3600
+      ]
+    ],
+    "milestones": [
+      {
+        "stage": "STAGE_1_PROPOSAL",
+        "title": "Administrative Proposal & In-Principle Approval",
+        "status": "COMPLETED",
+        "date": "2025-01-10",
+        "remarks": "Approved by GoMP & MNRE"
+      },
+      {
+        "stage": "STAGE_2_SIA",
+        "title": "Sec 4: Social Impact Assessment (SIA) & Expert Review",
+        "status": "COMPLETED",
+        "date": "2025-05-18",
+        "remarks": "Completed by MP Institute of Social Sciences"
+      },
+      {
+        "stage": "STAGE_3_SEC11",
+        "title": "Sec 11: Preliminary Notification (Gazette Publication)",
+        "status": "COMPLETED",
+        "date": "2025-09-02",
+        "remarks": "Published in MP Rajpatra"
+      },
+      {
+        "stage": "STAGE_4_SEC15",
+        "title": "Sec 15: Hearing of Objections & DC Report",
+        "status": "IN_PROGRESS",
+        "date": "2026-03-30",
+        "remarks": "42 disputed parcels regarding common grazing land classification"
+      },
+      {
+        "stage": "STAGE_5_SEC19",
+        "title": "Sec 19: Final Declaration & R&R Scheme Approval",
+        "status": "PENDING",
+        "date": "2026-08-30",
+        "remarks": "Awaiting Section 15 final inquiry report"
+      },
+      {
+        "stage": "STAGE_6_AWARD_DETERMINATION",
+        "title": "Sec 23/26: Valuation, Award & Solatium Calculation",
+        "status": "PENDING",
+        "date": "2026-12-15",
+        "remarks": "Market rate baseline study under review"
+      },
+      {
+        "stage": "STAGE_7_POSSESSION",
+        "title": "Sec 38: Compensation Payout (DBT) & Possession Handover",
+        "status": "PENDING",
+        "date": "2027-03-31",
+        "remarks": "Not started"
+      }
+    ]
+  },
+  {
+    "id": "PRJ-2026-DMRC-004",
+    "name": "Delhi Metro Phase-IV (R.K. Ashram to Janakpuri West Corridor)",
+    "category": "Urban Transit",
+    "requiringBody": "Delhi Metro Rail Corporation (DMRC)",
+    "ministry": "Ministry of Housing and Urban Affairs (MoHUA)",
+    "state": "Delhi (NCT)",
+    "districts": [
+      "Central Delhi",
+      "West Delhi"
+    ],
+    "totalLengthKm": 29.3,
+    "totalLandRequiredHa": 48.60,
+    "landAcquiredHa": 44.20,
+    "possessionHandedOverHa": 42.00,
+    "estimatedBudgetCr": 3150.00,
+    "compensationDisbursedCr": 2890.00,
+    "totalParcels": 142,
+    "acquiredParcels": 134,
+    "disputedParcels": 3,
+    "stage": "STAGE_7_POSSESSION",
+    "stageName": "Sec 38 Final Possession & Handover",
+    "status": "In Progress",
+    "priority": "High",
+    "startDate": "2024-01-20",
+    "targetPossessionDate": "2026-10-15",
+    "nodalOfficer": {
+      "name": "Shri Sanjay Mittal",
+      "designation": "Director (Projects), DMRC",
+      "contact": "+91 98110-33445",
+      "email": "director.proj@dmrc.org"
+    },
+    "slaoOfficer": {
+      "name": "Shri Ashish Mohan, DANICS",
+      "designation": "ADM & Land Acquisition Collector, West Delhi",
+      "contact": "+91 98100-22114",
+      "email": "lac.west@delhi.gov.in"
+    },
+    "alignmentCoordinates": [
+      [
+        28.6380,
+        77.2100
+      ],
+      [
+        28.6490,
+        77.1650
+      ],
+      [
+        28.6340,
+        77.1120
+      ],
+      [
+        28.6290,
+        77.0780
+      ]
+    ],
+    "milestones": [
+      {
+        "stage": "STAGE_1_PROPOSAL",
+        "title": "Administrative Proposal & In-Principle Approval",
+        "status": "COMPLETED",
+        "date": "2024-01-20",
+        "remarks": "Approved by GNCTD and MoHUA"
+      },
+      {
+        "stage": "STAGE_2_SIA",
+        "title": "Sec 4: Social Impact Assessment (SIA) & Expert Review",
+        "status": "COMPLETED",
+        "date": "2024-04-12",
+        "remarks": "Commercial rehabilitation package formulated"
+      },
+      {
+        "stage": "STAGE_3_SEC11",
+        "title": "Sec 11: Preliminary Notification (Gazette Publication)",
+        "status": "COMPLETED",
+        "date": "2024-07-30",
+        "remarks": "Delhi Extraordinary Gazette notification published"
+      },
+      {
+        "stage": "STAGE_4_SEC15",
+        "title": "Sec 15: Hearing of Objections & DC Report",
+        "status": "COMPLETED",
+        "date": "2024-11-15",
+        "remarks": "Public hearings conducted in Karol Bagh & Rajouri Garden"
+      },
+      {
+        "stage": "STAGE_5_SEC19",
+        "title": "Sec 19: Final Declaration & R&R Scheme Approval",
+        "status": "COMPLETED",
+        "date": "2025-02-28",
+        "remarks": "Final declaration issued"
+      },
+      {
+        "stage": "STAGE_6_AWARD_DETERMINATION",
+        "title": "Sec 23/26: Valuation, Award & Solatium Calculation",
+        "status": "COMPLETED",
+        "date": "2025-08-20",
+        "remarks": "Awards declared under Urban Multiplier 1.0x + 100% Solatium"
+      },
+      {
+        "stage": "STAGE_7_POSSESSION",
+        "title": "Sec 38: Compensation Payout (DBT) & Possession Handover",
+        "status": "IN_PROGRESS",
+        "date": "2026-10-15",
+        "remarks": "134 parcels possession taken; 3 under high court writ petition"
+      }
+    ]
+  }
+]

@@ -1,0 +1,9 @@
+{
+  "/_not-found/page": "app/_not-found/page.js",
+  "/(routes)/projects/[id]/page": "app/(routes)/projects/[id]/page.js",
+  "/(routes)/objections/page": "app/(routes)/objections/page.js",
+  "/(routes)/citizen-portal/page": "app/(routes)/citizen-portal/page.js",
+  "/api/v1/admin/sync-health/route": "app/api/v1/admin/sync-health/route.js",
+  "/page": "app/page.js",
+  "/(routes)/projects/page": "app/(routes)/projects/page.js"
+}

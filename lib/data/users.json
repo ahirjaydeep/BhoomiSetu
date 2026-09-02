@@ -1,0 +1,52 @@
+[
+  {
+    "id": "USER-001",
+    "name": "Dr. Amrit Lal Meena, IAS",
+    "role": "CENTRAL_MINISTRY",
+    "designation": "Secretary, Department of Land Resources (DoLR)",
+    "department": "Ministry of Rural Development, Govt. of India",
+    "jurisdiction": "National (PM GatiShakti Portal)",
+    "avatar": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop&crop=face",
+    "permissions": ["VIEW_ALL_PROJECTS", "APPROVE_NATIONAL_CORRIDORS", "VIEW_ANALYTICS", "EXPORT_GAZETTE"]
+  },
+  {
+    "id": "USER-002",
+    "name": "Shri Anurag Verma, IAS",
+    "role": "STATE_REVENUE",
+    "designation": "Financial Commissioner (Revenue)",
+    "department": "Revenue & Disaster Management, Govt. of Punjab",
+    "jurisdiction": "State Level (Punjab)",
+    "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=face",
+    "permissions": ["VIEW_STATE_PROJECTS", "NOTIFY_SEC11", "PUBLISH_SEC19_DECLARATION", "SET_STATE_MULTIPLIER"]
+  },
+  {
+    "id": "USER-003",
+    "name": "Dr. Harpreet Kaur, PCS",
+    "role": "DISTRICT_COLLECTOR_SLAO",
+    "designation": "District Collector & Special Land Acquisition Officer",
+    "department": "District Administration Jalandhar",
+    "jurisdiction": "District (Jalandhar)",
+    "avatar": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=100&h=100&fit=crop&crop=face",
+    "permissions": ["CADASTRAL_SURVEY", "HEAR_SEC15_OBJECTIONS", "DETERMINE_SEC23_AWARD", "ISSUE_POSSESSION_CERTIFICATE"]
+  },
+  {
+    "id": "USER-004",
+    "name": "Er. Vikramjit Singh",
+    "role": "REQUIRING_BODY",
+    "designation": "Project Director, NHAI PIU",
+    "department": "National Highways Authority of India (NHAI)",
+    "jurisdiction": "Corridor Requisitions (NHAI / MoRTH)",
+    "avatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&h=100&fit=crop&crop=face",
+    "permissions": ["SUBMIT_PROPOSAL", "UPLOAD_ALIGNMENT_GEOJSON", "ESCROW_COMPENSATION", "TRACK_POSSESSION"]
+  },
+  {
+    "id": "USER-005",
+    "name": "Sardar Gurdeep Singh Sandhu",
+    "role": "CITIZEN_LANDOWNER",
+    "designation": "Project-Affected Landowner (PAF)",
+    "department": "Citizen / Farmer Portal",
+    "jurisdiction": "Khasra 142/3/1, Kartarpur",
+    "avatar": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=100&h=100&fit=crop&crop=face",
+    "permissions": ["VIEW_OWN_KHASRA", "CHECK_DBT_PAYOUT", "FILE_SEC15_OBJECTION", "DOWNLOAD_FORM16_CERTIFICATE"]
+  }
+]

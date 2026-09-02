@@ -1,0 +1,49 @@
+{
+  "name": "bhoomisetu",
+  "version": "1.0.0",
+  "description": "Rashtriya BhoomiSetu — Real-Time National Land Acquisition & Management System (RFCTLARR Act 2013)",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "seed": "tsx scripts/seed-db.ts"
+  },
+  "keywords": [
+    "bhoomisetu",
+    "land-acquisition",
+    "rfctlarr",
+    "gis",
+    "cadastral",
+    "smart-india-hackathon"
+  ],
+  "author": "SIH 2026 Team",
+  "license": "ISC",
+  "dependencies": {
+    "@turf/turf": "^6.5.0",
+    "@types/geojson": "^7946.0.16",
+    "firebase": "^10.12.5",
+    "firebase-admin": "^12.3.1",
+    "leaflet": "^1.9.4",
+    "lucide-react": "^0.428.0",
+    "next": "14.2.5",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-leaflet": "^4.2.1",
+    "recharts": "^2.12.7"
+  },
+  "devDependencies": {
+    "@types/leaflet": "^1.9.12",
+    "@types/node": "^20.14.14",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "autoprefixer": "^10.5.4",
+    "eslint": "^8",
+    "eslint-config-next": "14.2.5",
+    "postcss": "^8.5.26",
+    "tailwindcss": "^3.4.19",
+    "tsx": "^4.23.13",
+    "typescript": "^5.5.4"
+  }
+}
