@@ -1,1 +1,1 @@
-{"version":1,"functions":{"/api/test-auth":{},"/api/dev/seed-firestore":{},"/api/v1/gis/buffer-intersection":{},"/api/v1/dbt/disburse":{},"/api/v1/valuation/calculate-award":{},"/api/v1/vault/generate-seal":{},"/api/v1/workflow/bottlenecks":{}}}
+{"version":1,"functions":{"/api/test-auth":{},"/api/dev/seed-firestore":{},"/api/v1/gis/buffer-intersection":{},"/api/v1/workflow/bottlenecks":{},"/api/v1/valuation/calculate-award":{},"/api/v1/dbt/disburse":{},"/api/v1/vault/generate-seal":{}}}
