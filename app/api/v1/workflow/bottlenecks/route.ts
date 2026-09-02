@@ -1,5 +1,7 @@
 import { NextResponse } from 'next/server';
 import { withAuth, AuthenticatedRequest } from '@/lib/middleware/withAuth';
+
+export const dynamic = 'force-dynamic';
 import { adminDb } from '@/lib/firebase/admin';
 import { checkSection19LapseRisk } from '@/lib/utils/lapseWatchdog';
 

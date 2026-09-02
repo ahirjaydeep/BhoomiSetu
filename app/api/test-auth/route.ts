@@ -1,6 +1,8 @@
 import { NextResponse } from 'next/server';
 import { withAuth, AuthenticatedRequest } from '@/lib/middleware/withAuth';
 
+export const dynamic = 'force-dynamic';
+
 async function handler(req: AuthenticatedRequest) {
   return NextResponse.json({
     message: 'Success! You have accessed a protected route.',
